@@ -1,34 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wonder Lust</title>
+
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 /* HEADER */
 header {
-  background: #333;
+  background: #222;
   color: white;
   padding: 15px;
   text-align: center;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: white;
   margin: 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* BANNER */
 .banner {
   width: 100%;
-  height: 250px;
+  height: 300px;
   background: url('images/banner.jpg') no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 /* CONTAINER */
@@ -38,6 +50,13 @@ nav a {
   margin: auto;
   padding: 20px;
   text-align: center;
+}
+
+/* ABOUT */
+.about {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /* SERVICES */
@@ -54,23 +73,25 @@ nav a {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 10px;
+  background: white;
 }
 
 /* IMAGE FIX */
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
-  background: #333;
+  background: #222;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media (max-width: 768px) {
   nav {
     display: flex;
@@ -78,12 +99,71 @@ footer {
   }
 
   .banner {
-    height: 180px;
-    font-size: 20px;
+    height: 200px;
+    font-size: 22px;
+    text-align: center;
   }
 
   .card {
     width: 90%;
   }
 }
-</style> 
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>🌍 Wonder Lust</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- BANNER -->
+<div class="banner">
+  Explore The World ✈️
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+  <h2>Welcome to Wonder Lust</h2>
+  <p>Your trusted travel partner for amazing experiences.</p>
+</div>
+
+<!-- ABOUT SECTION -->
+<div class="container about">
+  <h2>About Us</h2>
+  <p>We help people discover beautiful destinations and create unforgettable journeys.</p>
+</div>
+
+<!-- SERVICES SECTION -->
+<div class="container">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Tour Packages</h3>
+      <p>Affordable and customized travel plans.</p>
+    </div>
+    <div class="card">
+      <h3>Hotel Booking</h3>
+      <p>Best hotels at best prices.</p>
+    </div>
+    <div class="card">
+      <h3>Travel Guide</h3>
+      <p>Professional guides for your journey.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Wonder Lust | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
